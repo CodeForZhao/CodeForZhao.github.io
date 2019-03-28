@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script type="application/javascript" src="./js/jquery.min.js"></script>
+    <script type="application/javascript" src="./uikit/js/uikit.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="./js/swiper.min.js"></script>
+    <script type="application/javascript" src="./js/main.js"></script>
+    <script type="application/javascript" src="./js/wow.min.js"></script>
+    <script type="application/javascript" src="./js/CSSPlugin.min.js"></script>
+    <script type="application/javascript" src="./js/TweenLite.min.js"></script>
+    <title>恐龙博物馆</title>
+</head>
+<body class="sc">
+<nav class="rightNav">
+    <ul class="rightNavBox">
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">门票预约</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">全景体验</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">景区导航</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">资讯热线</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">公众号</span></a></li>
+        <li class="list clearfix"><a href="javascript:goTop()"><span class="navIcon"></span></a></li>
+    </ul>
+</nav>
+<header id="headerBox">
+    <nav id="headerNav">
+        <div class="headBg">
+            <h1 class="headLogo">
+                <a href="" class="title" style="">
+                    <img class="scDown" src="./images/navLogoTop.png" alt="">
+                    <img class="scTop" src="./images/navLogoBottom.png" alt="">
+                </a>
+            </h1>
+            <ul class="navBox clearfix">
+                <li class="navList">
+                    <a href="">
+                        <p class="homeListCn">首页</p>
+                        <p class="homeListEn">home</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore1" data-show=".navShow1">
+                    <a href="">
+                        <p class="homeListCn">走进博物馆</p>
+                        <p class="homeListEn">about museum</p>
+                    </a>
+                </li>
+                <li class="navList">
+                    <a href="">
+                        <p class="homeListCn">新闻公告</p>
+                        <p class="homeListEn">news bulletin</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore2" data-show=".navShow2">
+                    <a href="">
+                        <p class="homeListCn">展览</p>
+                        <p class="homeListEn">exhibition</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore3" data-show=".navShow3">
+                    <a href="">
+                        <p class="homeListCn">科普</p>
+                        <p class="homeListEn">science</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore4" data-show=".navShow4">
+                    <a href="">
+                        <p class="homeListCn">研究</p>
+                        <p class="homeListEn">research</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore5" data-show=".navShow5">
+                    <a href="">
+                        <p class="homeListCn">服务</p>
+                        <p class="homeListEn">ervice</p>
+                    </a>
+                </li>
+                <li class="navList languageBox" data-show=".langList">
+                    <p class="languageText">语言</p>
+                    <ul class="langList" style="display: none">
+                        <li><a href="">中文</a></li>
+                        <li><a href="">English</a></li>
+                        <li><a href="">한국어</a></li>
+                        <li><a href="">日本語</a></li>
+                    </ul>
+                </li>
+                <li class="navListAllBtn">
+                    <img src="./images/navHoverTop.png" alt="" class="navHoverTop">
+                    <img src="./images/navHoverBottom.png" alt="" class="navHoverBottom">
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow1" style="display: none;" data-hover=".navListMore1" data-show=".navShow1">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg11.jpg" alt="">
+                        </div>
+                        <p class="textBox">博物馆介绍</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg12.jpg" alt="">
+                        </div>
+                        <p class="textBox">视频</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg13.jpg" alt="">
+                        </div>
+                        <p class="textBox">基本陈列</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg14.jpg" alt="">
+                        </div>
+                        <p class="textBox">龙宫珍宝</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg15.jpg" alt="">
+                        </div>
+                        <p class="textBox">馆长致辞</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg16.jpg" alt="">
+                        </div>
+                        <p class="textBox">组织机构</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow2" style="display: none;" data-hover=".navListMore2" data-show=".navShow2">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg21.jpg" alt="">
+                        </div>
+                        <p class="textBox">临时展览</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg22.jpg" alt="">
+                        </div>
+                        <p class="textBox">展览合作</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow3" style="display: none;" data-hover=".navListMore3" data-show=".navShow3">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg31.jpg" alt="">
+                        </div>
+                        <p class="textBox">龙宫有约</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg32.jpg" alt="">
+                        </div>
+                        <p class="textBox">龙宫风采</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg33.jpg" alt="">
+                        </div>
+                        <p class="textBox">恐龙百科</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow4" style="display: none;" data-hover=".navListMore4" data-show=".navShow4">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg41.jpg" alt="">
+                        </div>
+                        <p class="textBox">学术动态</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg42.jpg" alt="">
+                        </div>
+                        <p class="textBox">学术成果</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg43.jpg" alt="">
+                        </div>
+                        <p class="textBox">科研服务</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow5" style="display: none;" data-hover=".navListMore5" data-show=".navShow5">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg51.jpg" alt="">
+                        </div>
+                        <p class="textBox">参观平面图</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg52.jpg" alt="">
+                        </div>
+                        <p class="textBox">开放时间及票价</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg53.jpg" alt="">
+                        </div>
+                        <p class="textBox">购票服务</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg54.jpg" alt="">
+                        </div>
+                        <p class="textBox">商店</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg55.jpg" alt="">
+                        </div>
+                        <p class="textBox">周边</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg56.jpg" alt="">
+                        </div>
+                        <p class="textBox">志愿者</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg57.jpg" alt="">
+                        </div>
+                        <p class="textBox">联系我们</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg58.jpg" alt="">
+                        </div>
+                        <p class="textBox">留言板</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navAll" style="display: none">
+            <div class="listBox clearfix">
+                <ul class="list6">
+                    <li><a href="">中文</a></li>
+                    <li><a href="">English</a></li>
+                    <li><a href="">한국어</a></li>
+                    <li><a href="">日本語</a></li>
+                </ul>
+                <ul class="list5">
+                    <li><a href="">参观平面图</a></li>
+                    <li><a href="">开放及票价</a></li>
+                    <li><a href="">购票服务</a></li>
+                    <li><a href="">商店</a></li>
+                    <li><a href="">周边</a></li>
+                    <li><a href="">志愿者</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">留言栏</a></li>
+                </ul>
+                <ul class="list4">
+                    <li><a href="">学术动态</a></li>
+                    <li><a href="">学术成果</a></li>
+                    <li><a href="">科研服务</a></li>
+                </ul>
+                <ul class="list3">
+                    <li><a href="">龙宫有约</a></li>
+                    <li><a href="">龙宫风采</a></li>
+                    <li><a href="">恐龙百科</a></li>
+                </ul>
+                <ul class="list2">
+                    <li><a href="">临时展览</a></li>
+                    <li><a href="">展览合作</a></li>
+                </ul>
+                <ul class="list1">
+                    <li><a href="">博物馆介绍</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">基本陈列</a></li>
+                    <li><a href="">龙宫珍宝</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navMasking"></div>
+    <div class="mobileTop">
+        <div class="box">
+            <p class="logo"><img src="./images/navLogoTop.png" alt=""></p>
+            <div class="openBtn"></div>
+        </div>
+    </div>
+    <nav class="mobileNav clearfix">
+        <ul class="float-left listBox">
+            <li class="listBtn">
+                <p><a href="">首页</a></p>
+            </li>
+            <li class="listBtn more">
+                <p>走进博物馆</p>
+                <ul class="childBox">
+                    <li><a href="">博物馆介绍</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">基本陈列</a></li>
+                    <li><a href="">龙宫珍宝</a></li>
+                    <li><a href="">馆长致辞</a></li>
+                    <li><a href="">组织机构</a></li>
+                </ul>
+            </li>
+            <li class="listBtn more">
+                <p>展览</p>
+                <ul class="childBox">
+                    <li><a href="">临时展览</a></li>
+                    <li><a href="">展览合作</a></li>
+                </ul>
+            </li>
+            <li class="listBtn more">
+                <p>研究</p>
+                <ul class="childBox">
+                    <li><a href="">学术动态</a></li>
+                    <li><a href="">学术成果</a></li>
+                    <li><a href="">科研服务</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="float-left listBox">
+            <li class="listBtn"><p><a href="">新闻公告</a></p></li>
+            <li class="listBtn more">
+                <p>科普</p>
+                <ul class="childBox">
+                    <li><a href="">龙宫有约</a></li>
+                    <li><a href="">龙宫风采</a></li>
+                    <li><a href="">恐龙百科</a></li>
+                </ul>
+            </li>
+            <li class="listBtn more">
+                <p>服务</p>
+                <ul class="childBox">
+                    <li><a href="">参观平面图</a></li>
+                    <li><a href="">开放时间及票价</a></li>
+                    <li><a href="">购票服务</a></li>
+                    <li><a href="">商店</a></li>
+                    <li><a href="">周边</a></li>
+                    <li><a href="">志愿者</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">留言板</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="topBlank"></div>
+<section class="animateBanner">
+    <img src="./images/organizationBanner.jpg" alt="">
+    <div class="textBox">
+        <p class="titleMain wow fadeInUp">组织机构</p>
+        <p class="titleSecondary wow fadeInUp" data-wow-delay="0.5s">自贡恐龙博物馆组成</p>
+    </div>
+</section>
+<div class="insideNav">
+    <div class="list"><a href="">博物馆介绍</a></div>
+    <div class="list"><a href="">视频</a></div>
+    <div class="list"><a href="">基本陈列</a></div>
+    <div class="list"><a href="">龙宫珍宝</a></div>
+    <div class="list"><a href="">馆长致辞</a></div>
+    <div class="list active"><a href="">组织机构</a></div>
+</div>
+<section class="organizationBox">
+    <div class="organizationAnimation animationBox"></div>
+    <div class="container contentBox">
+        <img src="./img/organizationContent.png" alt="" class="img-fluid">
+    </div>
+</section>
+<footer class="footerBox">
+    <div class="footerLogo">
+        <img src="./images/footerLogo.png" alt="">
+    </div>
+    <div class="footerBtn">
+        <ul class="footerList">
+            <li class="list"><a href="">景区概况</a></li>
+            <li class="list"><a href="">未来游客量</a></li>
+            <li class="list"><a href="">站长统计</a></li>
+            <li class="list"><a href="">在线调查</a></li>
+            <li class="list"><a href="">电子地图</a></li>
+            <li class="list"><a href="">游客须知</a></li>
+            <li class="list"><a href="">留言簿</a></li>
+            <li class="list"><a href="">友情链接</a></li>
+        </ul>
+    </div>
+    <p class="footerCopyright">Copyright ©2017 自贡恐龙博物馆 All Rights Reserved. Powered by Sunlue.</p>
+    <p class="footerTel">联系电话：86-813-5801235 5802095 5801234 5801000</p>
+    <p class="footerGwa"><span>蜀ICP备17001515号</span></p>
+</footer>
+<script type="text/javascript">
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        new WOW().init();
+    };
+</script>
+</body>
+</html>

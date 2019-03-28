@@ -1,0 +1,1005 @@
+@media screen and (max-width: 1265px) {
+  .headLogo{
+    .scDown,.scTop{
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .mobileTop{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    .box{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .openBtn{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: white;
+        top: 10px;
+        transition: .3s;
+      }
+      &::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: white;
+        top: 20px;
+        transition: .3s;
+      }
+    }
+    .closeBtn{
+      &::before{
+        transform: rotate(45deg);
+        transform-origin:  center;
+        top: 15px;
+      }
+      &::after{
+        transform: rotate(-45deg);
+        transform-origin:  center;
+        top: 15px;
+      }
+    }
+    .logo{
+      width: 50%;
+      margin: 0;
+      img{
+        width: 100%;
+        max-width: 185px;
+      }
+    }
+  }
+  .mobileNav{
+    //display: block;
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    position: fixed;
+    z-index: 1;
+    padding: 80px 15px;
+    overflow: scroll;
+    .listBox{
+      width: 50%;
+      height: 200px;
+      padding: 5px;
+      margin: 0;
+      .childBox{
+        padding: 0;
+        li{
+          margin: 10px 0;
+          font-size: 14px;
+          padding: 0 10px;
+        }
+      }
+      .more{
+        p{
+          position: relative;
+          &::after{
+            position: absolute;
+            content: '';
+            width: 16px;
+            right: 0;
+            top: 50%;
+            height: 2px;
+            background: #999;
+          }
+          &::before{
+            position: absolute;
+            content: '';
+            width: 2px;
+            right: 7px;
+            top: calc(50% - 7px);
+            height: 16px;
+            background: #999;
+            transition: .3s;
+          }
+        }
+        .childBox{
+          display: none;
+        }
+      }
+      .closeBtn{
+        p{
+          &::before{
+            opacity: 0;
+          }
+        }
+      }
+      .listBtn{
+        margin-bottom: 20px;
+        p{
+          margin: 0;
+          padding: 5px 0;
+          border-bottom: 1px solid #999;
+        }
+      }
+    }
+    a,p,li{
+      color: #e0e0e0;
+    }
+  }
+  .rightNav{
+    display: none;
+  }
+  #headerBox{
+    #headerNav{
+      display: none;
+    }
+  }
+  .homeBanner{
+    .museumInfoBox{
+      width: 90%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      animation: none;
+    }
+    .bdsharebuttonbox{
+      display: none;
+    }
+    .homeBannerLeftText{
+      display: none;
+    }
+  }
+  .homeMessageBox{
+    padding: 20px 0;
+    .homeMessageTitle{
+      img{
+        width: 80%;
+        max-width: 300px;
+      }
+    }
+    .uk-container{
+      padding: 0 10px;
+    }
+    .leftContent{
+      .leftContentBox{
+        padding: 10px;
+        height: auto;
+        li{
+          padding: 10px 0;
+        }
+      }
+    }
+    .rightContent{
+      height: auto;
+      .contentBox{
+        padding: 0 10px;
+      }
+    }
+    .homeMessageSilde{
+      .homeMessageSildeNext{
+        top: 40%;
+      }
+      .homeMessageSildePrev{
+        top: 40%;
+      }
+    }
+  }
+  .homeServiceBox{
+    padding: 20px 0;
+    .homeServiceTitle{
+      img{
+        width: 85%;
+        max-width: 320px;
+      }
+    }
+    .list1Title {
+      margin: 10px 0;
+    }
+    .list1BottomBox{
+      padding-left: 42px;
+    }
+    .list1Box {
+      margin: 10px 0;
+      .list1List{
+        .time {
+          font-size: 30px;
+          position: relative;
+        }
+      }
+    }
+    .list{
+      margin: 10px 0;
+      height: auto;
+      .box{
+        padding: 15px 10px !important;
+        .textBox{
+          width: 50%;
+          margin: 10px auto;
+          .textName{
+            font-size: 20px;
+          }
+        }
+        .imgBox{
+          width: 80px;
+          height: 68px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+    }
+  }
+  .homeCyclopediaBox{
+    //display: none;
+    .homeCyclopediaTitle{
+      padding-left: 35px;
+    }
+    .contentBox{
+      .cyclopediaPagination{
+        display: none;
+      }
+      .cyclopediaPrev{
+        left: 10px;
+        top:20%;
+      }
+      .cyclopediaNext{
+        right: 10px;
+        top:20%;
+      }
+      .leftBox{
+        width: 100%;
+        height: 60%;
+        background-position: left center;
+        bottom: 0;
+        top: initial;
+        padding: 10px;
+        .more{
+          margin-top: 0;
+        }
+        .info{
+          margin-top: 10px;
+        }
+      }
+      .rightBox{
+        height: 40%;
+        width: 100%;
+      }
+    }
+  }
+  .homeTourBox{
+    //display: none;
+    height: auto;
+    background: none;
+    .homeTourContentBox{
+      padding: 20px 0 20px;
+      .homeTourSildePagination{
+        display: none;
+      }
+      .homeTourSildeNext{
+        top: 40%;
+        right: 15px;
+      }
+      .homeTourSildePrev{
+        //bottom: 10px;
+        top: 40%;
+        left: 15px;
+      }
+
+      .homeTourSilde{
+        top: initial;
+        transform: initial;
+        .swiper-slide{
+          margin-top: 0 !important;
+          .showBox{
+            opacity: 1;
+            transform: initial;
+          }
+        }
+      }
+      .homeTourContentRightBtn{
+        top: 18px;
+        text-align: right;
+        .list{
+          margin: 0 4px;
+          .cn{
+            font-size: 16px;
+          }
+          .en{
+            display: none;
+          }
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
+    .homeTourTitle{
+      img{
+        width: 30%;
+        max-width: 120px;
+      }
+    }
+  }
+  .homeScenicBox{
+    padding: 20px 0;
+    .scenicList{
+      margin-top: 15px;
+    }
+    .homeScenicTitle{
+      padding: 10px 0;
+      img{
+        width: 82%;
+        max-width: 310px;
+      }
+    }
+    .homeScenicTop{
+      padding: 0;
+      height: 50vh;
+      .picBox{
+        img{
+          object-fit: cover;
+        }
+      }
+      .contentBox{
+        max-width: 100%;
+        width: 95%;
+        .title{
+          font-size: 24px;
+        }
+        .info{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .footerBox{
+    .footerLogo{
+      padding: 10px 0;
+    }
+    .footerBtn,.footerCopyright{
+      display: none;
+    }
+  }
+  .insideNav{
+    display: none;
+  }
+  .introduceBox{
+    padding: 0 15px;
+  }
+  .introduceCenter{
+    .developTrack{
+      .timeline{
+        &:after{
+          left: 0;
+        }
+        &:before{
+          left: 25px;
+        }
+        .list{
+          text-align: left !important;
+          margin: 10px 0;
+          &:before{
+            left: 20px;
+          }
+          a{
+            padding:0 10px 0 50px;
+          }
+        }
+      }
+    }
+    .introduceCenterBtn{
+      margin: 60px auto;
+      .list{
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 71vw;
+        height: 32vw;
+        margin: 10px auto;
+        .box{
+          .rightBox{
+            margin: 0;
+            .rightBoxTitleCn{
+              font-size: 20px;
+            }
+            .rightBoxTitleEn{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .constitutionBox{
+    background: #dedede;
+    .contentBox{
+      padding: 0 10px;
+      .titleBox{
+        line-height: 2.5em;
+      }
+      .textBox{
+        padding: 10px;
+      }
+    }
+  }
+  .topBlank{
+    display: none;
+  }
+  .animateBanner{
+    height: 30vh;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .textBox {
+      .titleMain{
+        font-size: 20px;
+      }
+      .titleSecondary{
+        font-size: 14px;
+      }
+    }
+  }
+  .videoBox{
+    padding: 40px 0;
+    .box{
+      margin-left: -15px;
+      margin-right: -15px;
+      .list{
+        padding-left: 15px;
+        padding-right: 15px;
+        .boxImg{
+          height: 200px;
+          &::before,&::after{
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .displayBox{
+    .panoramicImg{
+      height: 280px;
+      object-fit: cover;
+    }
+    .infoBox{
+      padding: 20px 0;
+    }
+    .contentBox{
+      padding: 30px 0;
+      #displayBoxSwiper{
+        padding-top: 40px;
+      }
+      .listBox{
+        padding: 20px 15px;
+        .listMore{
+          box-shadow: 4px 4px 5px #ccc;
+          .imgBox{
+            height: 140px;
+          }
+          .title{
+            line-height: 1.5em;
+          }
+          .info{
+            padding:0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+  .jewelleryBox{
+    .mainBox{
+      padding: 20px 0;
+      .jewelleryInfo{
+        margin: 0;
+        padding: 20px 15px 40px;
+      }
+      #jewellerySwiper{
+        padding: 50px 0 0;
+        .list{
+          padding: 0 15px;
+          .listImg{
+            height: 180px;
+            object-fit: cover;
+          }
+        }
+        .jewelleryPagination{
+          .swiper-pagination-bullet{
+            width: 20%;
+            font-size: 18px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .speechBox{
+    .contentBox{
+      padding: 10px 15px;
+    }
+  }
+  .organizationBox{
+    padding: 30px 0;
+  }
+  .announcementBox{
+    padding: 20px 0;
+    .cyclopediaTitle{
+      margin-bottom: 0;
+    }
+    .titleLeftBtn{
+      display: flex;
+      .list{
+        flex: 1;
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+    .contentBox{
+      margin: 0;
+      .imgBox{
+        height: 200px;
+      }
+      .textBox{
+        padding: 10px;
+        .date{
+          display: none;
+        }
+        .year{
+          display: none;
+        }
+      }
+      .listBox{
+        .time{
+          display: none;
+        }
+        .num{
+          display: none;
+        }
+        .title{
+          line-height: initial;
+          width: 89%;
+          padding: 30px 10px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .exhibitionTrailerBox {
+    padding: 20px 10px;
+    .titleBox{
+      //display: none;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .list {
+      height: initial;
+      padding: 10px 0;
+      .more{
+        display: none;
+      }
+      .time{
+        //display: none;
+        font-size: 12px;
+      }
+      .name{
+        line-height: initial;
+        font-size: 14px;
+      }
+      .address{
+        line-height: initial;
+        font-size: 14px;
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  .exhibitionCooperationBox{
+    .worldBox{
+      #exhibitionBanner{
+        .imgBox1{
+          width: 100%;
+          height: 220px;
+        }
+        .textBox{
+          position: relative;
+          width: 100%;
+          transform: initial;
+          top: initial;
+          left: initial;
+          padding: 20px 15px;
+          height: auto;
+        }
+        .imgBox2{
+          display: none;
+        }
+        .exhibitionNext,.exhibitionPrev{
+          display: none;
+        }
+        .exhibitionPagination{
+          padding: 0 20px;
+        }
+      }
+      .infoBox{
+        .more{
+          background-size: contain;
+          line-height: 40px;
+          font-size: 20px;
+        }
+      }
+    }
+    .domesticBox{
+      .listBox{
+        .list{
+          margin-bottom: 0;
+          .imgBox{
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+  .appointmentBanner{
+    height: 35vh;
+  }
+  .appointmentBox{
+    padding: 20px 0;
+    .list{
+      .imgBox{
+        height: 210px;
+      }
+      .textBox{
+        padding: 10px;
+        height: auto;
+        .title{
+          font-size: 18px;
+        }
+        .detailsBtn,.subscribeBtn{
+          line-height: 30px;
+          width: 80px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .cyclopediaBanner{
+    padding: 0 10px;
+    height: 400px;
+  }
+  .achievementTop{
+    //height: 100vh;
+    .textBox{
+      width: 95%;
+      .titleThirdly,.more,.line{
+        display: none;
+      }
+    }
+  }
+  .achievementBox{
+    padding: 20px 0;
+    .container{
+      padding: 0;
+    }
+    .box{
+      margin: 0;
+      .list{
+        padding: 5px;
+        .imgBox{
+          height: 215px;
+        }
+        .title{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .researchBox{
+    .topContent{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .imgBox{
+        height: 200px;
+      }
+      .textBox{
+        .title{
+          font-size: 20px;
+        }
+        .list{
+          font-size: 14px;
+        }
+        .tel{
+          font-size: 14px;
+        }
+        .more{
+          font-size: 14px;
+          line-height: 35px;
+        }
+      }
+    }
+    .bottomContent{
+      .box{
+        .list{
+          .title{
+            font-size: 16px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+  .supportingBox{
+    .contentBox{
+      padding: 20px 15px;
+      .box{
+        margin: 0 -15px;
+        .list{
+          padding: 0 15px;
+          margin-bottom: 30px;
+          .imgBox{
+            height: 200px;
+          }
+          .title{
+            line-height: 45px;
+            font-size: 18px;
+          }
+          .info{
+            font-size: 14px;
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .ticketBox{
+    .contentBox{
+      padding: 30px 15px;
+    }
+    .topTicketBox{
+      padding: 10px 0;
+      margin: auto;
+      .title{
+        font-size: 20px;
+      }
+      .list{
+        font-size: 14px;
+      }
+    }
+    .openTimeBox{
+      margin-top: 10px;
+      padding: 0;
+      .textBox{
+        padding: 15px 5px;
+        .title{
+          font-size: 20px;
+          line-height: 35px;
+          margin-bottom: 0;
+        }
+        .list{
+          font-size: 14px;
+        }
+      }
+      .imgBox{
+        height: 150px;
+        img{
+          width:100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .explainBox{
+      margin: 10px 0;
+      div{
+        padding: 0;
+      }
+      .imgBox{
+        height: 240px;
+      }
+      .textBox{
+        text-align: center;
+        .title{
+          font-size: 20px;
+          line-height: 35px;
+          margin-bottom: 0;
+        }
+        .list{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .surroundingBox{
+    .contentBox{
+      .surroundingBtn{
+        .list{
+          width: 25%;
+          font-size: 18px;
+          line-height: 34px;
+        }
+      }
+    }
+    .strategyBox{
+      padding: 15px;
+      .box{
+        margin: 0 -15px;
+        .list{
+          padding: 0 15px;
+          .imgBox{
+            height: 200px;
+          }
+          .textBox{
+            .title{
+              font-size: 18px;
+              line-height: 40px;
+            }
+            .info{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .hotelBox{
+      padding: 10px;
+      .list{
+        margin: 10px -10px;
+        .imgBox{
+          height: 220px;
+        }
+        .textBox{
+          padding: 0 20px;
+          .nameEn,.info,.address,.tel{
+            font-size: 14px;
+            margin-bottom: 14px;
+          }
+          .name{
+            font-size: 20px;
+          }
+          .more{
+            width: 100%;
+            .moreBtn{
+              width: calc(50% - 2px);
+              line-height: 40px;
+            }
+            .bookingBtn{
+              width: calc(50% - 2px);
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .shopBox{
+    .contentBox{
+      padding: 20px 10px;
+      #shopSwiper{
+        padding-bottom: 40px;
+      }
+      .row{
+        margin: 0;
+      }
+      .imgBox{
+        height: 240px;
+        text-align: center;
+      }
+      .textBox{
+        padding: 0 10px;
+        .name{
+          font-size: 24px;
+        }
+        .info,.guarantee,.delivery{
+          font-size: 14px;
+        }
+      }
+      .shopPrev,.shopNext{
+        display: none;
+      }
+    }
+    .otherBox{
+      .row{
+        margin: 0;
+      }
+      .list{
+        .box{
+          .imgBox{
+            height: auto;
+            img{
+              width: auto;
+              height: auto;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .volunteerBox{
+    padding: 20px 10px;
+    .volunteerTop{
+      .row{
+        .volunteerTop1,.volunteerTop3{
+          display: none;
+        }
+        .volunteerTop2{
+          clear: both;
+          img{
+            width: 100%;
+          }
+          .volunteerImg3{
+            width: 54.5%;
+            float: left;
+          }
+          .volunteerImg4{
+            width: 45.5%;
+            margin: 9px 0 0;
+            float: left;
+          }
+        }
+      }
+    }
+    .hotBox{
+      .imgBox{
+        height: 240px;
+      }
+      .textBox{
+        height: auto;
+        .title{
+          line-height: 1.5em;
+          padding: 10px 0;
+        }
+      }
+    }
+    .hotBottomBox{
+      .contentBox{
+        .listBox{
+          .time{
+            display: none;
+          }
+          .title{
+            line-height: initial;
+            width: 89%;
+            padding: 30px 10px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .contactBox{
+    .contactTitle{
+      font-size: 18px;
+    }
+    .contentBox{
+      .imgBox{
+        height: 50vw;
+      }
+      .contactText{
+        font-size: 16px;
+        line-height: 2em;
+      }
+    }
+  }
+  .messageBox{
+    .box{
+      padding: 20px 0;
+    }
+  }
+}

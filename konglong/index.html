@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script type="application/javascript" src="./js/jquery.min.js"></script>
+    <script type="application/javascript" src="./uikit/js/uikit.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="./js/swiper.min.js"></script>
+    <script type="application/javascript" src="./js/main.js"></script>
+    <script type="application/javascript" src="./js/wow.min.js"></script>
+    <script type="application/javascript" src="./js/CSSPlugin.min.js"></script>
+    <script type="application/javascript" src="./js/TweenLite.min.js"></script>
+    <title>恐龙博物馆</title>
+</head>
+<body class="indexBody">
+<nav class="rightNav">
+    <ul class="rightNavBox">
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">门票预约</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">全景体验</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">景区导航</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">资讯热线</span></a></li>
+        <li class="list clearfix"><a href=""><span class="navIcon"></span><span class="navIconText">公众号</span></a></li>
+        <li class="list clearfix"><a href="javascript:goTop()"><span class="navIcon"></span></a></li>
+    </ul>
+</nav>
+<header id="headerBox">
+    <nav id="headerNav">
+        <div class="headBg">
+            <h1 class="headLogo">
+                <a href="" class="title" style="">
+                    <img class="scDown" src="./images/navLogoTop.png" alt="">
+                    <img class="scTop" src="./images/navLogoBottom.png" alt="">
+                </a>
+            </h1>
+            <ul class="navBox clearfix">
+                <li class="navList">
+                    <a href="">
+                        <p class="homeListCn">首页</p>
+                        <p class="homeListEn">home</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore1" data-show=".navShow1">
+                    <a href="">
+                        <p class="homeListCn">走进博物馆</p>
+                        <p class="homeListEn">about museum</p>
+                    </a>
+                </li>
+                <li class="navList">
+                    <a href="">
+                        <p class="homeListCn">新闻公告</p>
+                        <p class="homeListEn">news bulletin</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore2" data-show=".navShow2">
+                    <a href="">
+                        <p class="homeListCn">展览</p>
+                        <p class="homeListEn">exhibition</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore3" data-show=".navShow3">
+                    <a href="">
+                        <p class="homeListCn">科普</p>
+                        <p class="homeListEn">science</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore4" data-show=".navShow4">
+                    <a href="">
+                        <p class="homeListCn">研究</p>
+                        <p class="homeListEn">research</p>
+                    </a>
+                </li>
+                <li class="navList navListMore navListMore5" data-show=".navShow5">
+                    <a href="">
+                        <p class="homeListCn">服务</p>
+                        <p class="homeListEn">ervice</p>
+                    </a>
+                </li>
+                <li class="navList languageBox" data-show=".langList">
+                    <p class="languageText">语言</p>
+                    <ul class="langList" style="display: none">
+                        <li><a href="">中文</a></li>
+                        <li><a href="">English</a></li>
+                        <li><a href="">한국어</a></li>
+                        <li><a href="">日本語</a></li>
+                    </ul>
+                </li>
+                <li class="navListAllBtn">
+                    <img src="./images/navHoverTop.png" alt="" class="navHoverTop">
+                    <img src="./images/navHoverBottom.png" alt="" class="navHoverBottom">
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow1" style="display: none;" data-hover=".navListMore1" data-show=".navShow1">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg11.jpg" alt="">
+                        </div>
+                        <p class="textBox">博物馆介绍</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg12.jpg" alt="">
+                        </div>
+                        <p class="textBox">视频</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg13.jpg" alt="">
+                        </div>
+                        <p class="textBox">基本陈列</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg14.jpg" alt="">
+                        </div>
+                        <p class="textBox">龙宫珍宝</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg15.jpg" alt="">
+                        </div>
+                        <p class="textBox">馆长致辞</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg16.jpg" alt="">
+                        </div>
+                        <p class="textBox">组织机构</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow2" style="display: none;" data-hover=".navListMore2" data-show=".navShow2">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg21.jpg" alt="">
+                        </div>
+                        <p class="textBox">临时展览</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg22.jpg" alt="">
+                        </div>
+                        <p class="textBox">展览合作</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow3" style="display: none;" data-hover=".navListMore3" data-show=".navShow3">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg31.jpg" alt="">
+                        </div>
+                        <p class="textBox">龙宫有约</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg32.jpg" alt="">
+                        </div>
+                        <p class="textBox">龙宫风采</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg33.jpg" alt="">
+                        </div>
+                        <p class="textBox">恐龙百科</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow4" style="display: none;" data-hover=".navListMore4" data-show=".navShow4">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg41.jpg" alt="">
+                        </div>
+                        <p class="textBox">学术动态</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg42.jpg" alt="">
+                        </div>
+                        <p class="textBox">学术成果</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg43.jpg" alt="">
+                        </div>
+                        <p class="textBox">科研服务</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navShow navShow5" style="display: none;" data-hover=".navListMore5" data-show=".navShow5">
+            <ul class="box clearfix">
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg51.jpg" alt="">
+                        </div>
+                        <p class="textBox">参观平面图</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg52.jpg" alt="">
+                        </div>
+                        <p class="textBox">开放时间及票价</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg53.jpg" alt="">
+                        </div>
+                        <p class="textBox">购票服务</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg54.jpg" alt="">
+                        </div>
+                        <p class="textBox">商店</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg55.jpg" alt="">
+                        </div>
+                        <p class="textBox">周边</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg56.jpg" alt="">
+                        </div>
+                        <p class="textBox">志愿者</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg57.jpg" alt="">
+                        </div>
+                        <p class="textBox">联系我们</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/navImg58.jpg" alt="">
+                        </div>
+                        <p class="textBox">留言板</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navAll" style="display: none">
+            <div class="listBox clearfix">
+                <ul class="list6">
+                    <li><a href="">中文</a></li>
+                    <li><a href="">English</a></li>
+                    <li><a href="">한국어</a></li>
+                    <li><a href="">日本語</a></li>
+                </ul>
+                <ul class="list5">
+                    <li><a href="">参观平面图</a></li>
+                    <li><a href="">开放及票价</a></li>
+                    <li><a href="">购票服务</a></li>
+                    <li><a href="">商店</a></li>
+                    <li><a href="">周边</a></li>
+                    <li><a href="">志愿者</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">留言栏</a></li>
+                </ul>
+                <ul class="list4">
+                    <li><a href="">学术动态</a></li>
+                    <li><a href="">学术成果</a></li>
+                    <li><a href="">科研服务</a></li>
+                </ul>
+                <ul class="list3">
+                    <li><a href="">龙宫有约</a></li>
+                    <li><a href="">龙宫风采</a></li>
+                    <li><a href="">恐龙百科</a></li>
+                </ul>
+                <ul class="list2">
+                    <li><a href="">临时展览</a></li>
+                    <li><a href="">展览合作</a></li>
+                </ul>
+                <ul class="list1">
+                    <li><a href="">博物馆介绍</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">基本陈列</a></li>
+                    <li><a href="">龙宫珍宝</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navMasking"></div>
+    <div class="mobileTop">
+        <div class="box">
+            <p class="logo"><img src="./images/navLogoTop.png" alt=""></p>
+            <div class="openBtn"></div>
+        </div>
+    </div>
+    <nav class="mobileNav clearfix">
+        <ul class="float-left listBox">
+            <li class="listBtn">
+                <p><a href="">首页</a></p>
+            </li>
+            <li class="listBtn more">
+                <p>走进博物馆</p>
+                <ul class="childBox">
+                    <li><a href="">博物馆介绍</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">基本陈列</a></li>
+                    <li><a href="">龙宫珍宝</a></li>
+                    <li><a href="">馆长致辞</a></li>
+                    <li><a href="">组织机构</a></li>
+                </ul>
+            </li>
+            <li class="listBtn more">
+                <p>展览</p>
+                <ul class="childBox">
+                    <li><a href="">临时展览</a></li>
+                    <li><a href="">展览合作</a></li>
+                </ul>
+            </li>
+            <li class="listBtn more">
+                <p>研究</p>
+                <ul class="childBox">
+                    <li><a href="">学术动态</a></li>
+                    <li><a href="">学术成果</a></li>
+                    <li><a href="">科研服务</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="float-left listBox">
+            <li class="listBtn"><p><a href="">新闻公告</a></p></li>
+            <li class="listBtn more">
+                <p>科普</p>
+                <ul class="childBox">
+                    <li><a href="">龙宫有约</a></li>
+                    <li><a href="">龙宫风采</a></li>
+                    <li><a href="">恐龙百科</a></li>
+                </ul>
+            </li>
+            <li class="listBtn more">
+                <p>服务</p>
+                <ul class="childBox">
+                    <li><a href="">参观平面图</a></li>
+                    <li><a href="">开放时间及票价</a></li>
+                    <li><a href="">购票服务</a></li>
+                    <li><a href="">商店</a></li>
+                    <li><a href="">周边</a></li>
+                    <li><a href="">志愿者</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">留言板</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="homeBanner">
+    <div class="museumInfoBox wow bounceInDown">
+        <img src="./images/museumInfo.png" alt="">
+    </div>
+    <div class="swiper-container" id="homeBanner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/banner1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/banner2.jpg" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination homeBannerPagination"></div>
+    </div>
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_weixin list" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_sqq list" data-cmd="sqq" title="分享到QQ好友"></a>
+        <a href="#" class="bds_tsina list" data-cmd="tsina" title="分享到新浪微博"></a>
+    </div>
+    <p class="homeBannerLeftText text-uppercase">
+        Website · sharing link
+    </p>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["qzone","bdysc","renren","bdxc","tqf","douban","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</section>
+<section class="homeMessageBox">
+    <p class="homeMessageTitle wow fadeInUp">
+        <img src="./images/homeMessageTitle.png" alt="" class="img-fluid">
+    </p>
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+            <div class="uk-width-large-1-2 uk-width-xlarge-1-2 leftContent">
+                <div class="leftContentBox">
+                    <p>
+                        <span class="changeTab active" data-show=".homeNewsBoxLeft">新闻资讯</span> /
+                        <span class="changeTab" data-show=".homeNewsBoxRight">公告</span>
+                        <a href="" class="float-right more">更多</a>
+                    </p>
+                    <div class="contentBox">
+                        <ul class="homeNewsBox homeNewsBoxLeft">
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                        </ul>
+                        <ul class="homeNewsBox homeNewsBoxRight">
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <p class="listDate">2018.12.24</p>
+                                    <p class="listTitle">党建引领 促事业发展——自贡恐龙博物馆党支部主题党日活动召开</p>
+                                </li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="uk-width-large-1-2 uk-width-xlarge-1-2 rightContent">
+                <div class="contentBox">
+                    <p class="activityTitle">预约·预告</p>
+                    <div class="swiper-container homeMessageSilde">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="./img/newsImg.jpg" alt="">
+                                </div>
+                                <div class="bottomContentBox">
+                                    <div class="">
+                                        <a href="">
+                                            <p class="textTitle">11月，自贡市民可10元逛龙宫 </p>
+                                            <p class="textDate">2018.11.1-2018.11.31</p>
+                                        </a>
+                                    </div>
+                                    <a href="" class="more">立即预约</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="./img/newsImg.jpg" alt="">
+                                </div>
+                                <div class="bottomContentBox">
+                                    <div class="">
+                                        <a href="">
+                                            <p class="textTitle">11月，自贡市民可10元逛龙宫 </p>
+                                            <p class="textDate">2018.11.1-2018.11.31</p>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)" class="more disabled">立即预约</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgBox">
+                                    <img src="./img/newsImg.jpg" alt="">
+                                </div>
+                                <div class="bottomContentBox">
+                                    <div class="">
+                                        <a href="">
+                                            <p class="textTitle">11月，自贡市民可10元逛龙宫 </p>
+                                            <p class="textDate">2018.11.1-2018.11.31</p>
+                                        </a>
+                                    </div>
+                                    <a href="" class="more">立即预约</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev homeMessageSildePrev"></div>
+                        <div class="swiper-button-next homeMessageSildeNext"></div>
+
+                    </div>
+
+                </div>
+            </div>
+            <p class="uk-width-xlarge-1-1 text-uppercase newsBoxSub" data-scroll-reveal>news and information</p>
+        </div>
+    </div>
+</section>
+<section class="homeServiceBox">
+    <p class="homeServiceTitle wow fadeInUp">
+        <img src="./images/homeServiceTitle.png" alt="" class="img-fluid">
+    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 list">
+                <div class="box">
+                    <p class="list1Title">开馆时间</p>
+                    <ul class="list1Box">
+                        <li class="list1List">
+                            <p class="time">08:30</p>
+                            <p class="name">开始售票</p>
+                        </li>
+                        <li class="list1List">
+                            <p class="time">17:00</p>
+                            <p class="name">停止售票</p>
+                        </li>
+                        <li class="list1List">
+                            <p class="time">17:30</p>
+                            <p class="name">闭馆时间</p>
+                        </li>
+                    </ul>
+                    <ul class="list1BottomBox">
+                        <li>全年开放、无休闭馆日</li>
+                        <li>假期周末：8:30 — 18:00；春节、国庆假期：8:30 — 18:30</li>
+                        <li>讲解服务时间为每日9:20</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2-5 list">
+                <div class="box">
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/serviceList21.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <p class="textName">在线订票</p>
+                            <p class="textNameEn">online booking</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2-5 list">
+                <div class="box">
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/serviceList31.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <p class="textName">展览信息</p>
+                            <p class="textNameEn">Exhibitions </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2-5 list">
+                <div class="box">
+                    <a href="">
+                        <div class="imgBox">
+                            <img src="./images/serviceList41.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <p class="textName">虚拟游览</p>
+                            <p class="textNameEn">The virtual tour</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="homeServiceBottomText">
+            <span class="text">OPENING TIME AND SERVICE</span>
+        </p>
+    </div>
+</section>
+<section class="homeCyclopediaBox">
+    <div class="container-fluid">
+        <p class="homeCyclopediaTitle wow fadeInUp">
+            <img src="./images/homeCyclopediaTitle.png" alt="" class="img-fluid">
+        </p>
+        <div class="contentBox">
+            <div class="leftBox">
+                <p class="title">四川巨棘龙</p>
+                <p class="titleEn">Gigantspinosaurus sichuanensis</p>
+                <p class="info">
+                    生活在（距今约1.4亿年）晚侏罗纪，以幼嫩的灌木树叶为食 ，长540cm、宽110cm、高150cm
+                    中等大小的原始剑龙，生活在距今约1.5亿年前的侏罗纪晚期。体长5.4米，头骨相对较小，颈部短，牙齿较小，呈叶状；身体背部的剑板形状多变，肩部长有一对巨大的肩棘。现收藏于自贡恐龙博物馆。
+                </p>
+                <a href="" class="more"></a>
+            </div>
+            <div class="swiper-container rightBox" id="cyclopediaSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/cyclopediaList1.jpg" alt="" class="cyclopediaImg">
+                        <div class="displayNone">
+                            <span class="title">四川巨棘龙1</span>
+                            <span class="titleEn">Gigantspinosaurus sichuanensis</span>
+                            <span class="info">1生活在（距今约1.4亿年）晚侏罗纪，以幼嫩的灌木树叶为食 ，长540cm、宽110cm、高150cm 中等大小的原始剑龙，生活在距今约1.5亿年前的侏罗纪晚期。体长5.4米，头骨相对较小，颈部短，牙齿较小，呈叶状；身体背部的剑板形状多变，肩部长有一对巨大的肩棘。现收藏于自贡恐龙博物馆。</span>
+                            <span class="more">http://www.baidu.com</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/cyclopediaList1.jpg" alt="" class="cyclopediaImg">
+                        <div class="displayNone">
+                            <span class="title">四川巨棘龙2</span>
+                            <span class="titleEn">Gigantspinosaurus sichuanensie</span>
+                            <span class="info">2生活在（距今约1.4亿年）晚侏罗纪，以幼嫩的灌木树叶为食 ，长540cm、宽110cm、高150cm 中等大小的原始剑龙，生活在距今约1.5亿年前的侏罗纪晚期。体长5.4米，头骨相对较小，颈部短，牙齿较小，呈叶状；身体背部的剑板形状多变，肩部长有一对巨大的肩棘。现收藏于自贡恐龙博物馆。</span>
+                            <span class="more">http://www.jd.com</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/cyclopediaList1.jpg" alt="" class="cyclopediaImg">
+                        <div class="displayNone">
+                            <span class="title">四川巨棘龙3</span>
+                            <span class="titleEn">Gigantspinosaurus sichuanensix</span>
+                            <span class="info">3生活在（距今约1.4亿年）晚侏罗纪，以幼嫩的灌木树叶为食 ，长540cm、宽110cm、高150cm 中等大小的原始剑龙，生活在距今约1.5亿年前的侏罗纪晚期。体长5.4米，头骨相对较小，颈部短，牙齿较小，呈叶状；身体背部的剑板形状多变，肩部长有一对巨大的肩棘。现收藏于自贡恐龙博物馆。</span>
+                            <span class="more">http://www.youku.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination cyclopediaPagination"></div>
+
+            <div class="swiper-button-prev cyclopediaPrev"></div>
+            <div class="swiper-button-next cyclopediaNext"></div>
+        </div>
+    </div>
+</section>
+<section class="homeTourBox">
+    <div class="homeTourAnimation animationBox"></div>
+    <div class="container-fluid">
+        <div class="homeTourContentBox">
+            <p class="homeTourTitle"><img src="./images/homeShowTitle.png" alt=""></p>
+            <div class="homeTourContentRightBtn">
+                <a href="" class="list">
+                    <p class="cn">展览动向</p>
+                    <p class="en">Exhibition trends</p>
+                </a>
+                <a href="" class="list">
+                    <p class="cn">联系展览</p>
+                    <p class="en">Contact exhibition</p>
+                </a>
+            </div>
+
+            <div class="swiper-container homeTourSilde">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="0.2s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="0.4s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="0.6s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="0.8s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="1s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="1.2s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="1.4s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="1.6s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="1.8s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="2s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="2.2s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="2.4s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wow fadeIn" data-wow-delay="2.6s">
+                        <div class="showBtn">
+                            <p class="date">2014.7.17</p>
+                            <p class="title">日本广岛展</p>
+                        </div>
+                        <div class="showBox">
+                            <a href="">
+                                <div class="imgBox">
+                                    <img src="./img/homeTourImg.png" alt="">
+                                </div>
+                                <p class="info">
+                                    1989年7～10月为庆祝中国四川省与日本广岛县建立友好省县关系5周年，自贡恐龙应日本广岛县“ ’89海与岛博览会”筹委会的邀请，展出114天，观众达170万人次！
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination homeTourSildePagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev homeTourSildePrev"></div>
+            <div class="swiper-button-next homeTourSildeNext"></div>
+        </div>
+    </div>
+</section>
+<section class="homeScenicBox">
+    <p class="homeScenicTitle">
+        <img src="./images/homeScenicTitle.png" alt="">
+    </p>
+    <div class="homeScenicTop">
+        <div class="picBox">
+            <img src="./images/homeScenic.jpg" alt="">
+        </div>
+        <div class="contentBox">
+            <p class="title wow fadeInUp" data-wow-delay="0.2s">特色景点</p>
+            <p class="info wow fadeInUp" data-wow-delay="0.4s">为您介绍自贡恐龙博物馆的主要看点</p>
+            <img src="./images/homeScenicImg.png" alt="" class="img wow fadeInUp" data-wow-delay="0.6s">
+        </div>
+    </div>
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid uk-grid-medium uk-grid-width-xlarge-1-5 uk-grid-width-large-1-5">
+            <div class="scenicList wow fadeInUp" data-wow-delay="0.3s">
+                <a href="" class="uk-grid">
+                    <div class="imgBox uk-width-large-1-1 uk-width-3-5">
+                        <div class="box">
+                            <img src="./images/homeScenicList1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-large-1-1 uk-width-2-5">
+                        <p class="scenicListTitle">龙宫餐厅</p>
+                        <p class="scenicListTitleEn">Restaurant</p>
+                    </div>
+                </a>
+            </div>
+            <div class="scenicList wow fadeInUp" data-wow-delay="0.6s">
+                <a href="" class="uk-grid">
+                    <div class="imgBox uk-width-large-1-1 uk-width-3-5">
+                        <div class="box">
+                            <img src="./images/homeScenicList2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-large-1-1 uk-width-2-5">
+                        <p class="scenicListTitle">龙宫攻略</p>
+                        <p class="scenicListTitleEn">Strategy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="scenicList wow fadeInUp" data-wow-delay="0.9s">
+                <a href="" class="uk-grid">
+                    <div class="imgBox uk-width-large-1-1 uk-width-3-5">
+                        <div class="box">
+                            <img src="./images/homeScenicList3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-large-1-1 uk-width-2-5">
+                        <p class="scenicListTitle">龙宫视频</p>
+                        <p class="scenicListTitleEn">Video</p>
+                    </div>
+                </a>
+            </div>
+            <div class="scenicList wow fadeInUp" data-wow-delay="1.2s">
+                <a href="" class="uk-grid">
+                    <div class="imgBox uk-width-large-1-1 uk-width-3-5">
+                        <div class="box">
+                            <img src="./images/homeScenicList4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-large-1-1 uk-width-2-5">
+                        <p class="scenicListTitle">龙宫娱乐</p>
+                        <p class="scenicListTitleEn">Entertainment</p>
+                    </div>
+                </a>
+            </div>
+            <div class="scenicList wow fadeInUp" data-wow-delay="1.5s">
+                <a href="" class="uk-grid">
+                    <div class="imgBox uk-width-large-1-1 uk-width-3-5">
+                        <div class="box">
+                            <img src="./images/homeScenicList5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-large-1-1 uk-width-2-5">
+                        <p class="scenicListTitle">龙宫周边</p>
+                        <p class="scenicListTitleEn">Store</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footerBox">
+    <div class="footerLogo">
+        <img src="./images/footerLogo.png" alt="">
+    </div>
+    <div class="footerBtn">
+        <ul class="footerList">
+            <li class="list"><a href="">景区概况</a></li>
+            <li class="list"><a href="">未来游客量</a></li>
+            <li class="list"><a href="">站长统计</a></li>
+            <li class="list"><a href="">在线调查</a></li>
+            <li class="list"><a href="">电子地图</a></li>
+            <li class="list"><a href="">游客须知</a></li>
+            <li class="list"><a href="">留言簿</a></li>
+            <li class="list"><a href="">友情链接</a></li>
+        </ul>
+    </div>
+    <p class="footerCopyright">Copyright ©2017 自贡恐龙博物馆 All Rights Reserved. Powered by Sunlue.</p>
+    <p class="footerTel">联系电话：86-813-5801235   5802095   5801234   5801000</p>
+    <p class="footerGwa"><span>蜀ICP备17001515号</span> </p>
+</footer>
+<script type="application/javascript">
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+
+    let homeBanner = new Swiper('#homeBanner', {
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+        },
+        speed: 1000,
+        effect: 'fade',
+        // 如果需要分页器
+        pagination: {
+            el: '.homeBannerPagination',
+            clickable: 'true'
+        }
+    });
+
+    let homeMessageSilde = new Swiper ('.homeMessageSilde', {
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.homeMessageSildeNext',
+            prevEl: '.homeMessageSildePrev',
+        }
+    })
+
+    let cyclopediaSwiper = new Swiper('#cyclopediaSwiper', {
+        loop: true, // 循环模式选项
+        // 如果需要分页器
+        pagination: {
+            el: '.cyclopediaPagination',
+            type: 'fraction'
+        },
+        speed: 800,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.cyclopediaNext',
+            prevEl: '.cyclopediaPrev',
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                let now = this.slides.eq(this.activeIndex);
+                alterCyclopedia(now)
+            }
+        }
+    })
+
+    let homeTourSilde = new Swiper ('.homeTourSilde', {
+
+        slidesPerView: ($(window).innerWidth()>992)?4:1,
+        spaceBetween: 50,
+        slidesPerGroup: ($(window).innerWidth()>992)?4:1,
+        // 如果需要分页器
+        pagination: {
+            el: '.homeTourSildePagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.homeTourSildeNext',
+            prevEl: '.homeTourSildePrev',
+        }
+    })
+
+    function alterCyclopedia(now) {
+        let info = now.find('.info').html() ? now.find('.info').html() : '';
+        let title = now.find('.title').html() ? now.find('.title').html() : '';
+        let titleEn = now.find('.titleEn').html() ? now.find('.titleEn').html() : '';
+        let url = now.find('.more').html() ? now.find('.more').html() : 'javascript:void(0)';
+        let box = $(".homeCyclopediaBox .leftBox");
+        box.find(".info").html(info);
+        box.find(".title").html(title);
+        box.find(".titleEn").html(titleEn);
+        box.find(".more").attr('href', url);
+    }
+
+
+
+    $(".homeMessageBox .changeTab").click(function () {
+        let el = $(this).data('show');
+        let close = $(this).data('close');
+        $(".homeMessageBox .changeTab").removeClass("active");
+        $(this).addClass("active");
+        $(".homeNewsBox").stop(true, true).fadeOut(0);
+        $(el).stop(true, true).fadeIn(300);
+    })
+
+
+</script>
+</body>
+</html>
